@@ -1,0 +1,291 @@
+body {
+background-color:#EEE;
+}
+
+.cabecera {
+height: 50px;
+_position: fixed;
+_z-index: 1000;
+_top: 0px;
+_left: 0px;
+_display: block;
+border-bottom:1px solid #cccccc;
+-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cuerpo{
+margin: 70px 108px 70px 108px;
+padding:120px 20px 10px 20px;
+background: #fff url("../imagenesLibro/cabecera.png") no-repeat left -1px;
+_float:left;
+border:1px solid #cccccc;
+min-height:575px;
+}
+.pie{
+background: #fff
+}
+.menu {
+display:none;
+top: 50px;
+border-right: 1px solid #ccc;
+_float:left;
+}
+.buscador {
+top: 50px;
+}
+ul.listaTexto{
+width:100%;
+}
+ul.listaTexto li{
+/*background:none;*/
+}
+
+a{
+color: #00A9E8;
+}
+a:hover{
+text-decoration: underline;
+}
+a.nuevo{
+color: #C90;
+}
+
+
+h1{
+font-family: "BBVALight", arial, sans-serif;
+margin-bottom: 15px;
+color: #084ea4;
+font-size: 32px;
+line-height: 30px;
+margin-right: 50px;
+}
+h2{
+font-family: "BBVALight", arial, sans-serif;
+font-size: 17px;
+margin: 10px 0px 10px;
+color: #333;
+font-weight: normal;
+}
+h3{
+font-family: "BBVALight", arial, sans-serif;
+font-size: 16px;
+margin-bottom: 10px;
+color: #999999;
+}
+
+/* --- CABECERA --- */
+
+.cabecera img{
+margin: 10px 0px 0px 20px;
+}
+.menu ul {
+margin-left: 10px;
+}
+.menu ul li{
+list-style-type: disc;
+}
+.menu ul li a{
+background: none;
+}
+
+/* --- CONTENIDOS -- */
+
+.dobleColumnaIzquierda .interior.libro, .dobleColumnaDerecha .interior.libro {
+border: 1px solid #e8e8e8;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: #fafafa;
+}
+
+pre{
+	_width:100%;
+	border:1px solid #A2A2A2;
+	background-color:#FFFFFF;
+	padding:8px;
+	margin:5px;
+	color:#000;
+	overflow:auto;
+}
+
+pre  > .rojo{
+	color:#FF0000;
+}
+
+pre > .verde{
+	color:#088A08;
+}
+
+pre > .azul{
+	color:#0000FF;
+}
+
+pre > .marron{
+	color:#8A4B08;
+}
+
+.paginador {
+width: 100%;
+padding: 0px 0px 10px 0px;
+border-bottom: 1px solid #8cd1f8;
+margin-bottom: 10px;
+}
+.paginador .centrar{
+text-align: center;
+margin: 0px auto;
+_text-align: left;
+}
+
+/* *** IE 7 *** */
+.cuerpo.minimizadoDerecha{
+*padding: 79px 30px 100px 230px;
+}
+
+h1{
+*font-family: "BBVALight", arial, sans-serif;
+*margin-bottom: 15px;
+*color: #084ea4;
+*font-size: 34px;
+*margin-right: 50px;
+}
+h2{
+*font-family: "BBVALight", arial, sans-serif;
+*font-size: 18px;
+*margin-bottom: 10px;
+*color: #666666;
+}
+h3{
+*font-family: "BBVALight", arial, sans-serif;
+*font-size: 16px;
+*margin-bottom: 10px;
+*color: #999999;
+}
+
+/* ** IE 6 ** */
+
+.cuerpo{
+_margin: 70px 183px 70px 53px;
+_padding: 120px 0px 10px 0px;
+}
+
+.cuerpo.minimizadoDerecha{
+ _padding: 57px 30px 57px 170px;
+}
+
+h1{
+_font-family: "BBVALight", arial, sans-serif;
+_margin-bottom: 15px;
+_color: #009de4;
+_font-size: 24px;
+_margin-right: 50px;
+}
+h2{
+_font-family: "BBVALight", arial, sans-serif;
+_font-size: 18px;
+_margin-bottom: 10px;
+_color: #666666;
+}
+h3{
+_font-family: "BBVALight", arial, sans-serif;
+_font-size: 16px;
+_margin-bottom: 10px;
+_color: #999999;
+}
+
+
+/*  menu desplegable */
+ul.menuDesplegable { /* es la lista principal */
+  background-color: #fff;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+ul.menuDesplegable li { /* cada item de la lista principal */
+  position: relative;
+  background:#f3f3f3;
+  display: block;
+  float: left;
+  height: 22px;
+  margin: 6px;
+  padding: 0;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+ul.menuDesplegable li:hover { /* efecto hover sobre los items de la lista principal */
+  -moz-border-radius: 4px;
+  background-color: #f3f3f3;
+  border:1px solid  #eee;
+}
+ul.menuDesplegable li a { /* cada item de la lista principal es un enlace */
+  color: #999;
+  display: block;
+  float: left;
+  padding:4px 4px;
+  text-decoration: none;
+}
+
+/* los efectos al pasar el rat�n que desplegar�n el submen� */
+
+ul.menuDesplegable li.drop:hover ul {
+  display: block;
+  padding: 0 0 10px 0;
+  z-index:103;
+}
+
+ul.menuDesplegable li ul { /* la lista con el submen� */
+  background-color: #CCC;
+  display: none;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 22px;
+  width: 100%;
+}
+ul.menuDesplegable li ul li { /* cada item del submen� */
+  border-top:3px solid #fff;
+  float: none;
+  height: auto;
+  margin: 0;
+  padding: 0px 2px;
+}
+ul.menuDesplegable li ul li a { /* cada item del submen� es un enlace */
+  background-color: transparent;
+  color: #999 !important;
+  display: block;
+  float: none;
+  font-size: 13px;
+  font-weight: normal;
+  height: auto;
+  margin: 0;
+  padding: 5px 5px;
+}
+
+/* efectos sobre los items del submen� */
+ul.menuDesplegable li:hover ul {
+  border: none;
+  background: #fff;
+  margin-bottom:0px;
+}
+ul.menuDesplegable li:hover li{
+  background: transparent;
+}
+ul.menuDesplegable li:hover ul * {
+  -moz-border-radius: 0;
+  background: #f3f3f3;
+}
+ul.menuDesplegable li ul li a:hover {
+  color: #fff !important;
+}
+ul.menuDesplegable li ul li:hover *{
+  background-color: #71b9ef;
+  border-top:3px solid #fff;
+}
+/*  menu desplegable */
