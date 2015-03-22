@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>PIBEE bootstrap</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>PIBEE bootstrap</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<h3>Consulta de saldos y movimientos</h3>
-			<h6>Conozca los saldos y movimientos de sus cuentas</h6>	
+			<h2>Consulta de saldos y movimientos</h2>
+			<small>Conozca los saldos y movimientos de sus cuentas</small>	
 		</div>
 	</header>
 	<div class="container">
@@ -58,7 +59,41 @@
 				</div>
 		</section>		
 	</div>
+	<div class="container">
+		<table>
+		  <thead>
+		        <tr><th></th><th></th></tr>
+		    </thead>
+		    <tbody>
+		        <tr class="clickable" data-toggle="collapse" id="68" data-target=".68collapsed">
+		            <td>visible row</td>
+		            <td>&nbsp;</td>
+		        </tr>
+		        <tr class="collapse out budgets 68collapsed">
+		            <td>hidden row</td>
+		            <td>&nbsp;</td>
+		        </tr>
+		        <tr class="collapse out budgets 68collapsed">
+		            <td>hidden row</td>
+		            <td>&nbsp;</td>
+		        </tr>
 
+		        <tr class="clickable" id="69" data-toggle="collapse" data-target=".69collapsed">
+		            <td>visible row</td>
+		            <td>&nbsp;</td>
+		        </tr>
+		        <tr class="collapse out budgets 69collapsed">
+		            <td>hidden row</td>
+		            <td>&nbsp;</td>
+		        </tr>
+		        <tr class="collapse out budgets 69collapsed">
+		            <td>hidden row</td>
+		            <td>&nbsp;</td>
+		        </tr>
+		    </tbody>
+		</table>		
+		
+	</div>
 
 	<script src="js/jquery.js"></script>	
 	<script src="js/bootstrap.min.js"></script>
